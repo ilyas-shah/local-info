@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="MissingParamError">
+    <DisplayName>MissingParamError</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json">\{"errorCode": "QPM", "errorMessage": "Query Param Missing, Please provide the specific query param."}</Payload>
+            <StatusCode>500</StatusCode>
+            <ReasonPhrase>Server Error</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <AssignVariable>
+        <Name>QueryParams</Name>
+        <Value>{request.queryparams}</Value>
+        <Ref>{request.queryparams}</Ref>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

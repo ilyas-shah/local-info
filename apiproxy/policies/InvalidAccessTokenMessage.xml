@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="InvalidAccessTokenMessage">
+    <DisplayName>InvalidAccessTokenMessage</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json">\{"errorCode": "AF", "errorMessage": "Invalid Access Token"}</Payload>
+        <StatusCode>401</StatusCode>
+        <ReasonPhrase>Authentication Error</ReasonPhrase>
+        <Path/>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="response"/>
+</AssignMessage>
