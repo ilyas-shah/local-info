@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="callEventbrite">
+    <DisplayName>callEventbrite</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="eventbriteRequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>eventbriteResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://www.eventbriteapi.com/v3/events/search/</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

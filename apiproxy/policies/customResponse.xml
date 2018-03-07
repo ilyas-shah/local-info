@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="customResponse">
+    <DisplayName>customResponse</DisplayName>
+    <Properties/>
+    <Set>
+        <Headers>
+            <Header name="Content-Type">application/json</Header>
+        </Headers>
+        <Payload content-type="application/json">\{"MapInfo": \{ "lat": {mapData.latitude}, "lng": {mapData.longitude}}, "Wiki": {wikiData.info}, "Restaurants" : {zomatoData.restaurants}, "Events": {eventbriteData.events}}</Payload>
+        <!-- <Payload contentType="text/xml">{ServiceCallout.response}</Payload> !-->
+    </Set>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

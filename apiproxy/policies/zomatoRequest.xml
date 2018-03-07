@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="zomatoRequest">
+    <DisplayName>zomatoRequest</DisplayName>
+    <Properties/>
+    <Add>
+        <Headers>
+            <Header name="user-key">c059ca43381a5d6267997c744cd94996</Header>
+            <Header name="Accept">application/json</Header>
+        </Headers>
+        <QueryParams>
+            <QueryParam name="lat">{mapData.latitude}</QueryParam>
+            <QueryParam name="lon">{mapData.longitude}</QueryParam>
+            <QueryParam name="count">2</QueryParam>
+        </QueryParams>
+        <FormParams/>
+        <Verb>GET</Verb>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request">zomatoRequest</AssignTo>
+</AssignMessage>

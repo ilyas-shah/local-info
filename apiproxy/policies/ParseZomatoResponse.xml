@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="ParseZomatoResponse">
+    <DisplayName>ParseZomatoResponse</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="restaurants">
+            <JSONPath>$.restaurants</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">zomatoResponse</Source>
+    <VariablePrefix>zomatoData</VariablePrefix>
+</ExtractVariables>

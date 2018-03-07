@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="eventbriteRequest">
+    <DisplayName>eventbriteRequest</DisplayName>
+    <Properties/>
+    <Add>
+        <QueryParams>
+            <QueryParam name="token">IVBBZF6Z6K5BZN22OPCE</QueryParam>
+            <QueryParam name="location.latitude">{mapData.latitude}</QueryParam>
+            <QueryParam name="location.longitude">{mapData.longitude}</QueryParam>
+            <QueryParam name="start_date.keyword">today</QueryParam>
+        </QueryParams>
+        <FormParams/>
+        <Verb>GET</Verb>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request">eventbriteRequest</AssignTo>
+</AssignMessage>

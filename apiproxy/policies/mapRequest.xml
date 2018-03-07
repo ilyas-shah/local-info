@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="mapRequest">
+    <DisplayName>mapRequest</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>cityname</Name>
+        <Value>{request.queryparam.cityname}</Value>
+    </AssignVariable>
+    <Set>
+        <Headers/>
+        <QueryParams>
+            <QueryParam name="address">{request.queryparam.cityname}</QueryParam>
+            <QueryParam name="key">AIzaSyAc20v5oBivLWxKU39N15B0pIx9KDe-ZoE</QueryParam>
+        </QueryParams>
+        <FormParams/>
+        <Verb>GET</Verb>
+        <Path/>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request">mapRequest</AssignTo>
+</AssignMessage>

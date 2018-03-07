@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>mapRequest</Name>
+            </Step>
+            <Step>
+                <Name>callGoogleMaps</Name>
+            </Step>
+            <Step>
+                <Name>ParseMapResponse</Name>
+            </Step>
+            <Step>
+                <Name>zomatoRequest</Name>
+            </Step>
+            <Step>
+                <Name>callZomato</Name>
+            </Step>
+            <Step>
+                <Name>ParseZomatoResponse</Name>
+            </Step>
+            <Step>
+                <Name>eventbriteRequest</Name>
+            </Step>
+            <Step>
+                <Name>callEventbrite</Name>
+            </Step>
+            <Step>
+                <Name>ParseEventbriteResponse</Name>
+            </Step>
+            <Step>
+                <Name>wikiRequest</Name>
+            </Step>
+            <Step>
+                <Name>callWiki</Name>
+            </Step>
+            <Step>
+                <Name>ParseWikiResponse</Name>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>customResponse</Name>
+            </Step>
+        </Response>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows/>
+    <HTTPProxyConnection>
+        <BasePath>/v1/city</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="getCityInfo">
+    <Basepaths>/v1/city</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1520360996961</CreatedAt>
+    <CreatedBy>ilyas.shah3@live.com</CreatedBy>
+    <Description>A simple proxy to fetch the details about a city like Map info, Restaurants, wiki and events.</Description>
+    <DisplayName>cityinfo</DisplayName>
+    <LastModifiedAt>1520400492413</LastModifiedAt>
+    <LastModifiedBy>ilyas.shah3@live.com</LastModifiedBy>
+    <ManifestVersion>c701543f62f63e9c6dd2a9c426bcbf6701f5a100e86faaeaa010148425270c79b87f5c2d739213677f9cd01834a54372bfd141cc3479d6f788f175337bebcddb</ManifestVersion>
+    <Policies>
+        <Policy>ParseEventbriteResponse</Policy>
+        <Policy>ParseJsonResponse</Policy>
+        <Policy>ParseMapResponse</Policy>
+        <Policy>ParseWikiResponse</Policy>
+        <Policy>ParseZomatoResponse</Policy>
+        <Policy>callEventbrite</Policy>
+        <Policy>callGoogleMaps</Policy>
+        <Policy>callWiki</Policy>
+        <Policy>callZomato</Policy>
+        <Policy>customResponse</Policy>
+        <Policy>eventbriteRequest</Policy>
+        <Policy>mapRequest</Policy>
+        <Policy>wikiRequest</Policy>
+        <Policy>zomatoRequest</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

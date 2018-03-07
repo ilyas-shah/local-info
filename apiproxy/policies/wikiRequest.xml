@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="wikiRequest">
+    <DisplayName>wikiRequest</DisplayName>
+    <Properties/>
+    <Add>
+        <QueryParams>
+            <QueryParam name="action">query</QueryParam>
+            <QueryParam name="prop">extracts</QueryParam>
+            <QueryParam name="format">json</QueryParam>
+            <QueryParam name="formatversion">2</QueryParam>
+            <QueryParam name="exintro"/>
+            <QueryParam name="titles">{request.queryparam.cityname}</QueryParam>
+        </QueryParams>
+        <FormParams/>
+        <Verb>GET</Verb>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="request">wikiRequest</AssignTo>
+</AssignMessage>

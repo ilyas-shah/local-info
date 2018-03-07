@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="callWiki">
+    <DisplayName>callWiki</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="wikiRequest">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response content-type="text">wikiResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://en.wikipedia.org/w/api.php</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

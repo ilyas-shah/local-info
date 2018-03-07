@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="ParseWikiResponse">
+    <DisplayName>ParseWikiResponse</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="info">
+            <JSONPath>$.query.pages[0]</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">wikiResponse</Source>
+    <VariablePrefix>wikiData</VariablePrefix>
+</ExtractVariables>
