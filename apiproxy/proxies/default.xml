@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ProxyEndpoint name="default">
+    <FaultRules>
+        <FaultRule name="InvalidAccessToken">
+            <Step>
+                <Name>InvalidAccessTokenMessage</Name>
+                <Condition>(oauthV2.VerifyAccessToken.InvalidAccessToken = "keymanagement.service.invalid_access_token")</Condition>
+            </Step>
+        </FaultRule>
+    </FaultRules>
     <Description/>
-    <FaultRules/>
     <PreFlow name="PreFlow">
         <Request>
+            <Step>
+                <Name>VerifyAccessToken</Name>
+            </Step>
+            <Step>
+                <Name>MissingParamError</Name>
+                <Condition>( request.queryparams.count=0 )</Condition>
+            </Step>
+            <Step>
+                <Name>EncryptedStore</Name>
+            </Step>
+            <Step>
+                <Name>RemoveAccessTokeHeader</Name>
+            </Step>
             <Step>
                 <Name>mapRequest</Name>
             </Step>
@@ -43,7 +63,7 @@
         </Request>
         <Response>
             <Step>
-                <Name>customResponse</Name>
+                <Name>FinalResponse</Name>
             </Step>
         </Response>
     </PreFlow>
@@ -58,7 +78,6 @@
         <VirtualHost>default</VirtualHost>
         <VirtualHost>secure</VirtualHost>
     </HTTPProxyConnection>
-    <RouteRule name="default">
-        <TargetEndpoint>default</TargetEndpoint>
+    <RouteRule name="noroute">
     </RouteRule>
 </ProxyEndpoint>
