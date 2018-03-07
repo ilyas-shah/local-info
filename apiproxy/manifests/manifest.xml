@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <Policies>
+        <VersionInfo resourceName="EncryptedStore" version="deb748c0aa001bf273ea1ac4c1ac237056f96b329d00ad1a99b847235009d97362e00934ae446d90ec824a76e31f0ddbaf575686b95c033b4637b8f4a47481e6"/>
+        <VersionInfo resourceName="FinalResponse" version="0851be09cc28a2aa822451c2b8b112cb8f6f30078560653c3b6b8376067c650959ebec0fc904d633d8719d1188939cd7ba5c5e4e1c1833bef8a8eb810960c6e2"/>
+        <VersionInfo resourceName="InvalidAccessTokenMessage" version="3f1b2266a607049062c14bb0d7dae82e1d58a04813116fd36d5dc204c02e5201b4e0adcfe66165c58a13a6e3a1174415ade9d93d6eae4e5dec998fc91b9107eb"/>
+        <VersionInfo resourceName="MissingParamError" version="be84cb6625faaf500f949aa7e53524cc3b641e0badd840d50a51fe812e841cf162906a1c2764855106ad8ccfbe02445317b2f7aa03195923474030c254b6eea0"/>
         <VersionInfo resourceName="ParseEventbriteResponse" version="17d6ead05fd0e74dab5231fb28a4ba36d7acb88d6f5d0ab9272b13aea11fc7715fa0e0dac2f61e89a900ee84191fce52bc95e11b2ae202909b809fbc7f680aa2"/>
-        <VersionInfo resourceName="ParseJsonResponse" version="2cb4835fc8500e13fa0401ea05d2d47325b723e16f78b5534ec3e7d953c290308a0ac599975f806c7760ca0e6cb8e573a288ee2547274dd5f2cb6520ee921087"/>
         <VersionInfo resourceName="ParseMapResponse" version="6ec23ad57d31e7c0ed6a949dbc4b8405074cda0d0a5dec7622297340b51de714b9eee5220aa9b6a55e9aba1cf979d7a76efeffdbced618ec12a2aedc6fbfd5b0"/>
         <VersionInfo resourceName="ParseWikiResponse" version="aa19f0edaa4ddf45cdfcc4e880e90f09355afb38c1dbf532f73a9343331dc3af843a4f2b3a5f1e7c2ccfe2e4c9a2b8baa424e73aacb19519da880aeb15b03a91"/>
         <VersionInfo resourceName="ParseZomatoResponse" version="e5ce12b86d5cde17ca62386b2d977b2e7fbc83248fb236abf8909a217d4e5d3a255921f4a4d8b328a8316d356ee3f4458b5d8109ad28629018088c9630c16199"/>
+        <VersionInfo resourceName="RemoveAccessTokeHeader" version="cfefbd9cf89a6321531d8c80c086ec43805efabcf5d64b05d94a027a1c6a482fdd0d10ea5234d48e3d06397c1ff4b70a594a819d20b4dbd7c9ad5eafddd8611d"/>
+        <VersionInfo resourceName="VerifyAccessToken" version="59274b3a8941a9a5c5361642ae5da0d4eb061049fa3d3a16c6e5450295fb69f11a4845473a1f9d7d180390051cf355f32d6d3bd770424da68d97acbc6c0a62ec"/>
         <VersionInfo resourceName="callEventbrite" version="cfc1556d45c9b894979ce8164d15c49d9df5c42ba747d82fa67355f4ef7ba5442866e306fed7426121c8ea44f6b8a7085196f6d3d53947096940f3be66ad8962"/>
         <VersionInfo resourceName="callGoogleMaps" version="75de9a50446937f75b2342a32018e6af385c5e1089c15402e504b63f5ee7657ca69dfeaaedbb98f94f043250723464335d0ffa8c68d990944685aa31404129aa"/>
         <VersionInfo resourceName="callWiki" version="016dc2e44b73d51a9906973d3bb200298b2261de62985c1446d68420933b10c65842fcc132d61c28516d1b415281066e54cfd9d981e0092c10fd82808d6dfbd3"/>
         <VersionInfo resourceName="callZomato" version="25624cdb799866249bcfc24039161fdfeea6951ae9d4e5e7746416ad3201362c0ed8abb62e0a6e51d6d9460675771672e56b15fb06acd319414a0640d031a908"/>
-        <VersionInfo resourceName="customResponse" version="86f9d9f1c1134d82afe42bfce77d6ee8be4a3e0949ceeb8a1746396bdc5a847a6f272d33eb600516b090112b1874ddf9efc3a4fe944f5b29a44c2e57dbce01a2"/>
         <VersionInfo resourceName="eventbriteRequest" version="f48f336e8cd5ce2c3d00ba865ba7f3b3a4ad5ca1cb85e213402be6eee7a7de3658e97e036a6670b0f54506515b10981d9bf3e819142dd8bbb624fbee565572fe"/>
         <VersionInfo resourceName="mapRequest" version="a5de6694c23ffb896cf054fcde3540ae8e878b7d801423375d2f255f8415ba5f2cfbd4d1e0721a5d3fa3dd29f7cc39aa13edbc9269602d00d126e0985c9de6b1"/>
         <VersionInfo resourceName="wikiRequest" version="5a8ac5a2a71cd7d8715a048c2dbfc73f194418b68e3eaba3f6712c7c53f0a05448815314ec578cfc29ac831a2e5c1a8a89531bdaf4d49f4fb34455edd70c7a3a"/>
         <VersionInfo resourceName="zomatoRequest" version="b31028f389756526013758571f5e578d4bf62c0ae1f0a0171e224fb4c9f95f245b4091677f402f8043db5b027d52a357ad692f1ea1172d3089d7fb8f9bc42a08"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="32d1f16adf0b502eeadaf30d9e236859e75624453e1f040034978b6b7c345c8e450a0b64cbf72d2777f610509e565e62081ef108f68e2336f48595012935cc9b"/>
+        <VersionInfo resourceName="default" version="9c2bd0f626445b4bda02a3c543f4ff1d84544228894d7a34c2d9c8d8da3ebdaf09961d90b5b870431c980f51b4d1306be388283a60ee3b7cea3a50da23d35881"/>
     </ProxyEndpoints>
     <Resources/>
     <SharedFlows/>
-    <TargetEndpoints>
-        <VersionInfo resourceName="default" version="0f9b33142e8040b73f208c7a69f0f75bb4fa43f2af665fd09e54a91fd4e4f9175e6a8bfce30e5658500f43421f1303c22a79af497198564dd6ebe2e8785da136"/>
-    </TargetEndpoints>
+    <TargetEndpoints/>
 </Manifest>
