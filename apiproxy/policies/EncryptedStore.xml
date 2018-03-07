@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="EncryptedStore" mapIdentifier="Encrypted_Store">
+    <DisplayName>EncryptedStore</DisplayName>
+    <Properties/>
+    <ExpiryTimeInSecs>3600</ExpiryTimeInSecs>
+    <Put override="true">
+        <Key>
+            <Parameter>access_token</Parameter>
+        </Key>
+        <Value>{request.header.Authorization}</Value>
+    </Put>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>
